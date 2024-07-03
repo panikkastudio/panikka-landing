@@ -1,0 +1,30 @@
+import { Header } from "@/components/header";
+import { MdxLayout } from "@/mdx-components";
+import Image from "next/image";
+import logo from "../../../../public/logo.jpeg";
+
+export const metadata = {
+  author: "John Doe",
+};
+
+# Welcome to my MDX page!
+
+This is some **bold** and _italics_ text.
+
+This is a list in markdown: // TODO
+
+- One
+- Two
+- Three
+
+Checkout my React component:
+
+<Image src={logo} alt="test" className="w-full h-auto" />
+
+export default function MDXPage({ children }) {
+  return (
+    <MdxLayout title="Neaten" tags={[1, 2, 3, 4]}>
+      {children}
+    </MdxLayout>
+  );
+}
