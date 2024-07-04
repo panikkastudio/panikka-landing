@@ -1,7 +1,6 @@
 import type { MDXComponents } from "mdx/types";
 import Link from "next/link";
 import { offerPoints } from "./base/const";
-import Image, { ImageProps } from "next/image";
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
     return {
@@ -22,7 +21,7 @@ export function MdxLayout({ children, title, tags }: { children: React.ReactNode
 
             <div className="flex items-center my-8 flex-wrap text-nowrap">
                 {tags.map((tag) => (
-                    <div className="flex items-center space-x-1 text-[13px] text-[#8E8E8E] mr-4 mb-2">
+                    <div key={`tag_${tag}`} className="flex items-center space-x-1 text-[13px] text-[#8E8E8E] mr-4 mb-2">
                         <span className="w-6 h-6 bg-primary/20 border border-primary rounded mr-1" />
                         {offerPoints.find((op) => op.id == tag)?.title}
                     </div>

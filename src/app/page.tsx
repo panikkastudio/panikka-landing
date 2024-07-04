@@ -37,8 +37,8 @@ export default function Home() {
 
                     <p>Hi, Osman and Alina here.</p>
                     <p>
-                        We're two software developers with 7+ years under our belts. Our thing? Turning cool ideas into real products. We cut through
-                        the fluff and get your project out there quickly, so you can start making waves on the internet.
+                        We&apos;re two software developers with 7+ years under our belts. Our thing? Turning cool ideas into real products. We cut
+                        through the fluff and get your project out there quickly, so you can start making waves on the internet.
                     </p>
                 </div>
             </div>
@@ -131,7 +131,7 @@ export default function Home() {
                 <div className="space-y-3.5">
                     <p>
                         Very talented architect and BE. He has led the development of our MVP and delivered his part within proposed billable hours.
-                        He is highly responsible. I'm very grateful for having him in this project and would highly recommend him for any startup
+                        He is highly responsible. I&apos;m very grateful for having him in this project and would highly recommend him for any startup
                         team.
                     </p>
                     <div className="flex font-bold">
@@ -145,7 +145,7 @@ export default function Home() {
                 <div className="space-y-3.5">
                     <p>
                         Osman is an amazing full stack developer. He is very detailed oriented and implements solutions both quickly and effectively.
-                        I think he's probably one of the most senior developers our team has ever had the honor of working with...
+                        I think he&apos;s probably one of the most senior developers our team has ever had the honor of working with...
                     </p>
                     <div className="flex font-bold">
                         <a href="https://www.linkedin.com/in/ricky-ho-a25a05104/" className="underline decoration-1">
