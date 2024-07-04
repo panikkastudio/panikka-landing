@@ -220,7 +220,7 @@ export default function Home() {
           </p>
           <div className="flex font-bold">
             <a
-              href="https://www.linkedin.com/in/ricky-ho/"
+              href="https://www.linkedin.com/in/ricky-ho-a25a05104/"
               className="underline decoration-1"
             >
               Ricky Ho,
