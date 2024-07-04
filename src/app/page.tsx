@@ -35,7 +35,7 @@ export default function Home() {
                         <Image src={alina} alt="Alina" width={50} height={50} className="rounded-full -ml-2" />
                     </div>
 
-                    <p>Hi, Alina and Osman here.</p>
+                    <p>Hi, Osman and Alina here.</p>
                     <p>
                         We're two software developers with 7+ years under our belts. Our thing? Turning cool ideas into real products. We cut through
                         the fluff and get your project out there quickly, so you can start making waves on the internet.
@@ -112,6 +112,46 @@ export default function Home() {
                             Cordell Hardy,
                         </a>
                         <span className="ml-1">3M</span>
+                    </div>
+                </div>
+
+                <div className="space-y-3.5">
+                    <p>
+                        Did a fantastic job as part of a team we hired to complete a machine learning/AI project. They were extremely professional and
+                        completed all assignments on time and with a focus on quality.
+                    </p>
+                    <div className="flex font-bold">
+                        <a href="https://www.linkedin.com/in/sinitsin/" className="underline decoration-1">
+                            Oleg Sinitsin,
+                        </a>
+                        <span className="ml-1">Dynamite Analytics</span>
+                    </div>
+                </div>
+
+                <div className="space-y-3.5">
+                    <p>
+                        Very talented architect and BE. He has led the development of our MVP and delivered his part within proposed billable hours.
+                        He is highly responsible. I'm very grateful for having him in this project and would highly recommend him for any startup
+                        team.
+                    </p>
+                    <div className="flex font-bold">
+                        <a href="https://www.linkedin.com/in/eric-zhang-singapore/" className="underline decoration-1">
+                            Eric Zhang,
+                        </a>
+                        <span className="ml-1">ClassAir</span>
+                    </div>
+                </div>
+
+                <div className="space-y-3.5">
+                    <p>
+                        Osman is an amazing full stack developer. He is very detailed oriented and implements solutions both quickly and effectively.
+                        I think he's probably one of the most senior developers our team has ever had the honor of working with...
+                    </p>
+                    <div className="flex font-bold">
+                        <a href="https://www.linkedin.com/in/ricky-ho-a25a05104/" className="underline decoration-1">
+                            Ricky Ho,
+                        </a>
+                        <span className="ml-1">Treelab</span>
                     </div>
                 </div>
 

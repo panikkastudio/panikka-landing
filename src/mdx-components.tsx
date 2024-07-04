@@ -28,8 +28,7 @@ export function MdxLayout({ children, title, tags }: { children: React.ReactNode
                     </div>
                 ))}
             </div>
-
-            {children}
+            <article className="prose">{children}</article>
         </main>
     );
 }

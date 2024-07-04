@@ -10,9 +10,13 @@ export function Footer() {
                 </a>
 
                 <div className="flex items-center space-x-3 font-light">
-                    <span className="text-sm text-link">upwork</span>
+                    <a href="https://www.upwork.com/freelancers/~01b5fb0ecf819eae23" target="_blank" className="text-sm text-link">
+                        upwork
+                    </a>
                     <span className="h-1.5 w-1.5 rounded-full bg-[#ACACAC]" />
-                    <span className="text-sm text-link">hi@panikka.studio</span>
+                    <a href="mailto:hi@panikka.studio" className="text-sm text-link">
+                        hi@panikka.studio
+                    </a>
                     <Status />
                 </div>
             </div>
