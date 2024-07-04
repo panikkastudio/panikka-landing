@@ -1,7 +1,3 @@
-export default function UseCase({
-  params: { slug },
-}: {
-  params: { slug: string };
-}) {
-  return <></>;
+export default function UseCase({ params: { slug } }: { params: { slug: string } }) {
+    return <></>;
 }
