@@ -6,7 +6,9 @@ export function Header() {
     <header className="flex justify-between items-center max-w-screen-sm mx-auto my-8 p-4">
       <Image src={logo} alt="Panikka Studio" className="w-9 h-9" />
       <div className="flex items-center space-x-3 font-light">
-        <span className="text-sm text-link">hi@panikka.studio</span>
+        <a href="mailto:hi@panikka.studio" className="text-sm text-link">
+          hi@panikka.studio
+        </a>
         <Status />
       </div>
     </header>

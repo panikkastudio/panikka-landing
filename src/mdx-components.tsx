@@ -39,7 +39,7 @@ export function MdxLayout({
           </div>
         ))}
       </div>
-      <article className="prose ">{children}</article>
+      <article className="prose">{children}</article>
     </main>
   );
 }

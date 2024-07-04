@@ -56,7 +56,7 @@ export default function Home() {
             />
           </div>
 
-          <p>Hi, Alina and Osman here.</p>
+          <p>Hi, Osman and Alina here.</p>
           <p>
             We're two software developers with 7+ years under our belts. Our
             thing? Turning cool ideas into real products. We cut through the
