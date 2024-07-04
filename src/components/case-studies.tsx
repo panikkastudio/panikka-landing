@@ -61,7 +61,6 @@ export function Vizco() {
 }
 
 export function AppImage({ src, appName, alt, className }: { src: StaticImageData; appName: string; alt: string; className?: string }) {
-    console.log("hfjkek", src.src);
     return (
         <div className={`${className} group relative sm:flex rounded-3xl w-full h-32 `}>
             <Image src={src} alt={alt} className={`w-full h-full object-cover rounded-3xl hover:cursor-alias`} />
