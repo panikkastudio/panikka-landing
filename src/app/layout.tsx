@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import { Inter } from "next/font/google";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
+import { Analytics } from "@vercel/analytics/react";
 
 const avenir = localFont({
     src: [
@@ -41,6 +42,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <html lang="en">
             <body className={`${avenir.variable} ${inter.variable} font-avenir min-h-screen flex flex-col justify-between`}>
                 <div>
+                    <Analytics />
                     <Header />
                     {children}
                 </div>
