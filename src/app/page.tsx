@@ -69,7 +69,24 @@ export default function Home() {
                         Each product is technically challenging in a unique way. We figure those out for you, so you can focus on your business
                         instead.
                     </p>
+
+                    <div className="flex flex-wrap justify-start gap-4 max-w-[470px]">
+                        {[
+                            "Hard-working backends",
+                            "Thoughtful frontends",
+                            "Native mobile apps",
+                            "Made by professionals",
+                            "100% Satisfaction",
+                            "Warranty after delivery",
+                        ].map((item, index) => (
+                            <div key={`offer_${item}`} className="flex items-center gap-x-1 font-light">
+                                <div className="border border-[#D9700F] bg-[#D9700F] bg-opacity-25 w-6 h-6 rounded-lg" />
+                                <span className="text-gray-500 text-[13px]">{item}</span>
+                            </div>
+                        ))}
+                    </div>
                 </div>
+
                 <div className="space-y-5">
                     <h2 className="font-bold text-[17px]">What’s next.</h2>
                     <p>
@@ -81,6 +98,7 @@ export default function Home() {
                         No hourlies, no hidden costs.
                     </p>
                 </div>
+
                 <div className="space-y-5">
                     <h2 className="font-bold text-[17px]">How it’s done.</h2>
                     <p>
@@ -92,6 +110,7 @@ export default function Home() {
                         at all times.
                     </p>
                 </div>
+
                 <div className="space-y-5">
                     <h2 className="font-bold text-[17px]">After delivery.</h2>
                     <p>
@@ -103,6 +122,7 @@ export default function Home() {
                         if needed.
                     </p>
                 </div>
+
                 <div className="border-[0.5px] border-zinc-200" />
 
                 <div className="space-y-3.5">
