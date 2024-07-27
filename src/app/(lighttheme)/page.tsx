@@ -1,17 +1,17 @@
 import Image from "next/image";
 
-import alina from "../../public/avatars/alina.png";
-import osman from "../../public/avatars/osman.png";
+import alina from "@/public/avatars/alina.png";
+import osman from "@/public/avatars/osman.png";
 
-import dreamer from "../../public/ios-apps/dreamer.png";
-import neaten from "../../public/ios-apps/neaten.png";
-import obscura from "../../public/ios-apps/obscura.png";
-import painerly from "../../public/ios-apps/painterly.png";
-import paraphraser from "../../public/ios-apps/paraphraser.png";
-import reverser from "../../public/ios-apps/reverser.png";
-import roamlog from "../../public/ios-apps/roamlog.png";
-import rszr from "../../public/ios-apps/rszr.png";
-import waifu from "../../public/ios-apps/waifu.png";
+import dreamer from "@/public/ios-apps/dreamer.png";
+import neaten from "@/public/ios-apps/neaten.png";
+import obscura from "@/public/ios-apps/obscura.png";
+import painerly from "@/public/ios-apps/painterly.png";
+import paraphraser from "@/public/ios-apps/paraphraser.png";
+import reverser from "@/public/ios-apps/reverser.png";
+import roamlog from "@/public/ios-apps/roamlog.png";
+import rszr from "@/public/ios-apps/rszr.png";
+import waifu from "@/public/ios-apps/waifu.png";
 
 import { PrimaryButton } from "@/components/button";
 import { Magicshorts, Vizco, Vuescout, AppImage, AppStore } from "@/components/case-studies";
@@ -94,8 +94,8 @@ export default function Home() {
                         meeting so we can make the most of your time.
                     </p>
                     <p>
-                        After our call, I am going to send a project breakdown and our quote for the project. We are very transparent with our prices.
-                        No hourlies, no hidden costs.
+                        After our call, We are going to send a project breakdown and our quote for the project. We are very transparent with our
+                        prices. No hourlies, no hidden costs.
                     </p>
                 </div>
 
@@ -106,8 +106,8 @@ export default function Home() {
                         milestone.
                     </p>
                     <p>
-                        You’ll be invited to a projec`t channel to where we keep you up to date in each step of the process, keeping you in the loop
-                        at all times.
+                        You’ll be invited to a project channel to where we keep you up to date in each step of the process, keeping you in the loop at
+                        all times.
                     </p>
                 </div>
 

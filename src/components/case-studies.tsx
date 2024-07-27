@@ -1,8 +1,8 @@
 import Image, { StaticImageData } from "next/image";
 
-import magicshorts from "../../public/case-studies/magicshorts.png";
-import vizco from "../../public/case-studies/vizco.png";
-import vuescout from "../../public/case-studies/vuescout.png";
+import magicshorts from "@/public/case-studies/magicshorts.png";
+import vizco from "@/public/case-studies/vizco.png";
+import vuescout from "@/public/case-studies/vuescout.png";
 
 const transformClass = "transform transition duration-500 hover:scale-[1.02] hover:drop-shadow-xl ";
 
@@ -73,7 +73,7 @@ export function AppStore() {
     return (
         <a
             href="https://apps.apple.com/us/developer/panikka-studio/id1701542040"
-            className={`flex flex-col justify-center h-32 col-span-2 rounded-3xl p-5 px-9 bg-[url('../../public/case-studies/bg-gradient.png')] bg-cover hover:cursor-alias`}
+            className={`flex flex-col justify-center h-32 col-span-2 rounded-3xl p-5 px-9 bg-[url('/case-studies/bg-gradient.png')] bg-cover hover:cursor-alias`}
         >
             <span>AppStore</span>
             <p className="font-bold text-lg">Discover Our Apps</p>

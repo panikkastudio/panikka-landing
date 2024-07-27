@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 // @ts-ignore
-import logo from "../../public/logo.jpeg";
+import logo from "@/public/logo.png";
 
 export function Header() {
     return (
