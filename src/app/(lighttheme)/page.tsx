@@ -19,7 +19,7 @@ import { Magicshorts, Vizco, Vuescout, AppImage, AppStore } from "@/components/c
 export default function Home() {
     return (
         <main className="flex min-h-screen flex-col items-center justify-between">
-            <div className="flex flex-col z-10 w-full max-w-screen-sm mx-6 justify-between lg:flex space-y-8 p-4 ">
+            <div className="flex flex-col z-10 w-full max-w-screen-sm mx-6 justify-between lg:flex space-y-8 p-4">
                 <div className="py-16 space-y-4">
                     <h1 className="sm:text-[52px] text-3xl leading-tight tracking-tight font-black font-inter mb-6">
                         closing <span className="text-primary font-bold">{"{braces}"}</span> until they do cool things.

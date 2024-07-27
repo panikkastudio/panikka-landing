@@ -2,11 +2,15 @@ import Image from "next/image";
 
 // @ts-ignore
 import logo from "@/public/logo.png";
+import Link from "next/link";
 
 export function Header() {
     return (
         <header className="flex justify-between items-center max-w-screen-sm mx-auto my-8 p-4">
-            <Image src={logo} alt="Panikka Studio" className="w-9 h-9" />
+            <Link href="/">
+                <Image src={logo} alt="Panikka Studio" className="w-9 h-9" />
+            </Link>
+
             <div className="flex items-center space-x-3 font-light">
                 <a href="mailto:hi@panikka.studio" className="text-sm text-link">
                     hi@panikka.studio

@@ -5,6 +5,7 @@ import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { Analytics } from "@vercel/analytics/react";
 import { Theme } from "@radix-ui/themes";
+import { Background } from "./cool-stuff/light-it-up/background";
 
 const avenir = localFont({
     src: [
@@ -45,6 +46,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                     <Analytics />
                     <Header />
                     {children}
+                    <Background />
                 </div>
                 <Footer dark />
             </Theme>
