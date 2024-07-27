@@ -5,7 +5,7 @@ import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { Analytics } from "@vercel/analytics/react";
 import { Theme } from "@radix-ui/themes";
-import { Background } from "./cool-stuff/light-it-up/background";
+import { Background } from "./background";
 
 const avenir = localFont({
     src: [

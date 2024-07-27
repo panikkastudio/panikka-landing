@@ -2,6 +2,7 @@
 
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { Badge, Box, DataList, Flex, Grid, Text } from "@radix-ui/themes";
+import { useState } from "react";
 
 export default function LightItUp() {
     const progress = useMotionValue(0);
@@ -19,34 +20,16 @@ export default function LightItUp() {
                         onMouseEnter={() => progress.set(1)}
                         onMouseLeave={() => progress.set(0)}
                     />
-                    <Box className="font-mono">
-                        <Text className="title border-b border-[--gray-12] text-[--gray-12] w-full pb-2 mb-2 block">Rectangle</Text>
-
-                        <Flex align="center" justify="between">
-                            <Text>Height</Text>
-                            <Text>100</Text>
-                        </Flex>
-
-                        <Flex align="center" justify="between">
-                            <Text>Width</Text>
-                            <Text>100</Text>
-                        </Flex>
-
-                        <Flex align="center" justify="between">
-                            <Text>Radius</Text>
-                            <Text>8</Text>
-                        </Flex>
-
-                        <Flex align="center" justify="between">
-                            <Text>Stroke</Text>
-                            <Text>None</Text>
-                        </Flex>
-
-                        <Flex align="center" justify="between">
-                            <Text>Color</Text>
-                            <Text>#FFFF</Text>
-                        </Flex>
-                    </Box>
+                    <InfoBox
+                        title="Rectangle"
+                        properties={[
+                            { title: "Height", value: "100" },
+                            { title: "Width", value: "100" },
+                            { title: "Radius", value: "8" },
+                            { title: "Stroke", value: "None" },
+                            { title: "Color", value: "#FFFF" },
+                        ]}
+                    />
                 </Box>
 
                 <Box className="space-y-6">
@@ -56,33 +39,16 @@ export default function LightItUp() {
                         onMouseEnter={() => progress.set(1)}
                         onMouseLeave={() => progress.set(0)}
                     />
-                    <Box className="font-mono">
-                        <Text className="title border-b border-[--gray-12] text-[--gray-12] w-full pb-2 mb-2 block">Shadow 1</Text>
-                        <Flex align="center" justify="between">
-                            <Text>X</Text>
-                            <Text>0</Text>
-                        </Flex>
-
-                        <Flex align="center" justify="between">
-                            <Text>Y</Text>
-                            <Text>0</Text>
-                        </Flex>
-
-                        <Flex align="center" justify="between">
-                            <Text>Blur</Text>
-                            <Text>8</Text>
-                        </Flex>
-
-                        <Flex align="center" justify="between">
-                            <Text>Spread</Text>
-                            <Text>0</Text>
-                        </Flex>
-
-                        <Flex align="center" justify="between">
-                            <Text>Color</Text>
-                            <Text>#FFFF</Text>
-                        </Flex>
-                    </Box>
+                    <InfoBox
+                        title="Shadow 1"
+                        properties={[
+                            { title: "X", value: "0" },
+                            { title: "Y", value: "0" },
+                            { title: "Blur", value: "8" },
+                            { title: "Spread", value: "0" },
+                            { title: "Color", value: "#FFFF" },
+                        ]}
+                    />
                 </Box>
 
                 <Box className="space-y-6">
@@ -92,34 +58,16 @@ export default function LightItUp() {
                         onMouseEnter={() => progress.set(1)}
                         onMouseLeave={() => progress.set(0)}
                     />
-                    <Box className="font-mono">
-                        <Text className="title border-b border-[--gray-12] text-[--gray-12] w-full pb-2 mb-2 block">Shadow 2</Text>
-
-                        <Flex align="center" justify="between">
-                            <Text>X</Text>
-                            <Text>0</Text>
-                        </Flex>
-
-                        <Flex align="center" justify="between">
-                            <Text>Y</Text>
-                            <Text>0</Text>
-                        </Flex>
-
-                        <Flex align="center" justify="between">
-                            <Text>Blur</Text>
-                            <Text>32</Text>
-                        </Flex>
-
-                        <Flex align="center" justify="between">
-                            <Text>Spread</Text>
-                            <Text>8</Text>
-                        </Flex>
-
-                        <Flex align="center" justify="between">
-                            <Text>Color</Text>
-                            <Text>#FFFF</Text>
-                        </Flex>
-                    </Box>
+                    <InfoBox
+                        title="Shadow 2"
+                        properties={[
+                            { title: "X", value: "0" },
+                            { title: "Y", value: "0" },
+                            { title: "Blur", value: "32" },
+                            { title: "Spread", value: "8" },
+                            { title: "Color", value: "#FFFF" },
+                        ]}
+                    />
                 </Box>
 
                 <Box className="space-y-6">
@@ -131,34 +79,16 @@ export default function LightItUp() {
                         onClick={() => (spring.get() > 0 ? progress.set(0) : progress.set(1))}
                     />
 
-                    <Box className="font-mono">
-                        <Text className="title border-b border-[--gray-12] text-[--gray-12] w-full pb-2 mb-2 block">Shadow 3</Text>
-
-                        <Flex align="center" justify="between">
-                            <Text>X</Text>
-                            <Text>0</Text>
-                        </Flex>
-
-                        <Flex align="center" justify="between">
-                            <Text>Y</Text>
-                            <Text>0</Text>
-                        </Flex>
-
-                        <Flex align="center" justify="between">
-                            <Text>Blur</Text>
-                            <Text>128</Text>
-                        </Flex>
-
-                        <Flex align="center" justify="between">
-                            <Text>Spread</Text>
-                            <Text>32</Text>
-                        </Flex>
-
-                        <Flex align="center" justify="between">
-                            <Text>Color</Text>
-                            <Text>#FFFF</Text>
-                        </Flex>
-                    </Box>
+                    <InfoBox
+                        title="Shadow 3"
+                        properties={[
+                            { title: "X", value: "0" },
+                            { title: "Y", value: "0" },
+                            { title: "Blur", value: "128" },
+                            { title: "Spread", value: "32" },
+                            { title: "Color", value: "#FFFF" },
+                        ]}
+                    />
                 </Box>
             </Flex>
 
@@ -172,5 +102,22 @@ export default function LightItUp() {
                 </a>
             </Box>
         </div>
+    );
+}
+
+function InfoBox({ title, properties }: { title: string; properties: { title: string; value: string }[] }) {
+    const [random] = useState(Math.random());
+
+    return (
+        <Box className="font-mono">
+            <Text className="title border-b border-[--gray-12] text-[--gray-12] w-full pb-2 mb-2 block">{title}</Text>
+
+            {properties.map(({ title, value }) => (
+                <Flex key={`${random}-${title}-${value}`} align="center" justify="between">
+                    <Text>{title}</Text>
+                    <Text>{value}</Text>
+                </Flex>
+            ))}
+        </Box>
     );
 }
